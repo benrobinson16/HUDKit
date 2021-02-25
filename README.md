@@ -73,6 +73,16 @@ struct ContentView: View {
 }
 ```
 
+## Installation
+
+For iOS and macOS projects, please install via Xcode's GUI for Swift Packages providing this url: https://github.com/benrobinson16/HUDKit.git
+
+For SwiftPackages, add the following to your dependencies array:
+
+```swift
+.package(name: "HUDKit", url: "https://github.com/benrobinson16/HUDKit.git", .upToNextMajor(from: .init(1, 0, 0)))
+```
+
 ## Credits
 
 Inspired by the HUD interface in [this article](https://fivestars.blog/swiftui/swiftui-hud.html).

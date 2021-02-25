@@ -7,6 +7,8 @@ A simple Swift package for managing Apple-like HUD views.
 To use the default behaviour, first wrap your entire view hierachy in an `HUDContainer` like so (preferably in the `App.swift` file):
 
 ```swift
+import HUDKit
+
 struct MyApp: Swift {
     var body: some View {
         WindowGroup {
@@ -23,6 +25,8 @@ This will give the `HUDKit` API the ability to present an HUD above your view hi
 Next, when you want to display a HUD:
 
 ```swift
+import HUDKit
+
 HUDManager.shared.display("Hello, world!")
 
 // or, specifying a symbol
@@ -44,6 +48,8 @@ If you wish to define your own HUD view content, you must make your own containe
 Simply, you can use the HUD in a `ZStack` with your custom content:
 
 ```swift
+import HUDKit
+
 struct ContentView: View {
     @State private var showHUD = false
 
